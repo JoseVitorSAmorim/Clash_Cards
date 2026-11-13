@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./game/oito.css";
+
+@theme {
+  --color-felt: #0e3b2e;
+  --color-felt-deep: #08261d;
+  --color-felt-lite: #187256;
+  --color-gold: #e4c56a;
+  --color-cream: #f3ead7;
+  --color-ink: #1c1612;
+  --color-suit: #c5362b;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+    background: var(--color-felt);
+    color: var(--color-cream);
+  }
+}
